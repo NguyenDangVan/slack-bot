@@ -1,0 +1,19 @@
+
+1. Hiển thị danh sách schedule message
+- cho phép cancel (hàng loạt/ từng schedule)
+- hiển thị trên spread sheet hay web?
+
+templates/export_members.json
+
+2. code bot bằng python
+# Sử dụng chatGPT để trả lời (mention)
+curl https://api.openai.com/v1/models \
+  -H 'Authorization: Bearer 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' \
+  -H 'OpenAI-Organization: org-2EeLTR1FOGCJNa8jAl4RrbSv'
+
+
+client.chat_postMessage(channel='C03U0RSLN0G', text='Vannd')
+
+
+@search_1.result
+@search_1.result.group(:companies__id).order(:companies__name).sum(:invoices__fee)

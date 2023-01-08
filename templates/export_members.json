@@ -1,0 +1,101 @@
+[
+	{
+		"type": "section",
+		"text": {
+			"type": "mrkdwn",
+			"text": "*_Export danh sách thành viên một kênh vào Spreadsheet_*"
+		}
+	},
+	{
+		"type": "divider"
+	},
+	{
+		"type": "section",
+		"text": {
+			"type": "mrkdwn",
+			"text": "*Chọn kênh chat* *"
+		}
+	},
+	{
+		"type": "actions",
+		"elements": [
+			{
+				"type": "conversations_select",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select pulic conversation",
+					"emoji": true
+				},
+				"filter": {
+					"include": [
+						"public"
+					]
+				},
+				"action_id": "actionId-0"
+			}
+		]
+	},
+	{
+		"type": "input",
+		"element": {
+			"type": "plain_text_input",
+			"action_id": "plain_text_input-action"
+		},
+		"label": {
+			"type": "plain_text",
+			"text": "Link Spreadsheet có sheetId chứa thông tin thành viên *",
+			"emoji": true
+		}
+	},
+	{
+		"type": "section",
+		"text": {
+			"type": "mrkdwn",
+			"text": "*Lưu ý về Link Spreadsheet :smile:*"
+		}
+	},
+	{
+		"type": "section",
+		"text": {
+			"type": "plain_text",
+			"text": "① Tạo mới hoặc sử dụng một spreadsheet trên Google Drive",
+			"emoji": true
+		}
+	},
+	{
+		"type": "section",
+		"text": {
+			"type": "mrkdwn",
+			"text": "② Thêm email account@oppa-cloud.iam.gserviceaccount.com vào Spreadsheet với quyền *Edit*"
+		}
+	},
+	{
+		"type": "section",
+		"text": {
+			"type": "mrkdwn",
+			"text": "③ Link submit cần đầy đủ thông tin tới sheet *#gid*"
+		}
+	},
+	{
+		"type": "section",
+		"text": {
+			"type": "mrkdwn",
+			"text": "`https://docs.google.com/spreadsheets/d/AbCxYz/edit#gid=123`"
+		}
+	},
+	{
+		"type": "actions",
+		"elements": [
+			{
+				"type": "button",
+				"text": {
+					"type": "plain_text",
+					"text": "Update",
+					"emoji": true
+				},
+				"value": "update_spread_sheet",
+				"action_id": "actionId-0"
+			}
+		]
+	}
+]
